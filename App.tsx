@@ -1,10 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import dummyData from './data/dummyData';
+import Row from './components/Row';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      {dummyData.map((item, index) => (
+        <Row
+          key={index}
+          image={item.image}
+          title={item.title}
+          description={item.description}
+        />
+      ))}
       <StatusBar style="auto" />
     </View>
   );

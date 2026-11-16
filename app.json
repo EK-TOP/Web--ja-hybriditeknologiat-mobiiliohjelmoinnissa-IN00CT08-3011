@@ -1,7 +1,9 @@
 {
   "expo": {
+    "plugins": [["expo-router", { "root": "./src/app" }]],
     "name": "viikkotehtava3",
     "slug": "viikkotehtava3",
+    "scheme": "viikkotehtava3",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
